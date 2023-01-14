@@ -1,0 +1,140 @@
+/*=============================================================
+             bootstrap 3 media query
+ ==============================================================*/
+/*- large devises (lab-top & desk-top)-*/
+@media (min-width: 1200px) {
+/*   ok */
+}
+
+/*- large devises (land scape tablet @medium Desc-top )-*/
+@media (min-width: 992px ) and (max-width: 1199px) {
+   .navbar{
+       background: rgba(0,0,0,.7);
+       padding: 0;
+   }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+}
+
+
+/*- large devises (portrait tablet and small desc-top)-*/
+@media (min-width: 768px ) and (max-width: 991px){
+    .navbar{
+        background: rgba(0,0,0,.7);
+        padding: 0;
+    }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+/*  about -remove diagonal border  */
+    #about-bg-diagonal{
+        border:0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box{
+        width: 100%;
+        height: 350px;
+    }
+/*    stats*/
+    .stats-item{
+        padding: 20px 0;
+    }
+/*  footer bottom*/
+    #footer-copyrights{
+        text-align: center;
+    }
+}
+/*- large devises (phones &tablet)-*/
+@media (max-width:767px){
+    .navbar{
+        background: rgba(0,0,0,.7);
+        padding: 0;
+    }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+/*  heading  */
+    #home-heading h3{
+        font-size:24px;
+    }
+    /*  buttons*/
+    .btn-general{
+        padding: 6px 22px 6px 22px ;
+        font-size: 14px;
+    }
+    /*  about -remove diagonal border  */
+    #about-bg-diagonal{
+        border:0;
+        width: 100%;
+        height: 300px;
+    }
+    #about-content-box{
+        width: 100%;
+        height: 300px;
+    }
+
+    /*    stats*/
+    .stats-item{
+        padding: 20px 0;
+    }
+    /*  footer bottom*/
+    #footer-copyrights{
+        text-align: center;
+    }
+}
+/*- large devises (phones &tablet)-*/
+@media (max-width:480px){
+    .navbar{
+        background: rgba(0,0,0,.7);
+        padding: 0;
+    }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+}
+/*- large devises (phones &tablet)-*/
+@media (max-width:767px){
+    .navbar{
+        background: rgba(0,0,0,.7);
+        padding: 0;
+    }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+}
+/*- large devises (phones &tablet)-*/
+@media (max-width:320px){
+    .navbar{
+        background: rgba(0,0,0,.7);
+        padding: 0;
+    }
+    .navbar-nav{
+        padding: 0;
+        float: right;
+    }
+    .care-nav-wrapper{
+        padding: 0;
+    }
+}

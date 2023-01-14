@@ -1,0 +1,679 @@
+/***********************************************************
+               Default values
+
+               colors:
+               white:         #FFFFFF
+               light blue:    #00AFDB
+               sky blue :     #0D58C1
+               blue:          #271E79
+               dark blue :    #221551
+*************************************************************/
+
+
+/*==================================================
+                general css;
+====================================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+
+
+/*==================================================
+                HOME
+====================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../imgs/background.jpg");
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*    text-align: center;*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 45px;
+    margin: 20px 0 20px 0;
+}
+
+
+/*==================================================
+               parallax (ginereic)
+====================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*==================================================
+                   BUTTONS[Generic]
+====================================================*/
+
+.btn-general {
+    color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    border-color: #41464b;
+    color: #41464b;
+    background: white;
+}
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+    /*float: right;*/
+}
+
+.btn-blue:hover,
+.btn-bluee:focus {
+    border-color: #ffff;
+    color: #ffff;
+    background: #34c6d3;
+}
+
+
+/*==================================================
+                  Animation
+====================================================*/
+
+#home-cover {
+    animation-delay: 0.1s;
+    animation-duration: .5s;
+}
+
+#home-heading {
+    animation-delay: 0.5s;
+    animation-duration: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+
+
+/*==================================================
+                  Content(Generic)
+====================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.content-title-underline {
+    width: 50px;
+    height: 4px;
+    background-color: #34c6d3;
+    margin: 0 auto 35px auto;
+}
+
+
+/*==================================================
+                 exercise 
+====================================================*/
+
+.exercise-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 5px 7px 4px #34c6d3;
+}
+
+.exercise-item-icon img {
+    float: right;
+    padding: 15px;
+    margin-left: 25px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+}
+
+.exercise-item:hover .exercise-item-icon img {
+    background: #34c6d3;
+}
+
+.exercise-item-title h3 {
+    text-align: right;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.exercise-item-desc p,
+h6 {
+    text-align: right;
+    margin: 0;
+    padding-right: 85px;
+}
+
+
+/*==================================================
+                 about
+====================================================*/
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 650px;
+    float: left;
+    background-image: url("../imgs/tabeb.jpg");
+    border-right: 200px solid #ffffff;
+    border-top: 700px solid transparent;
+}
+
+#about-content-box {
+    float: right;
+    height: 650px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: right;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
+/*==================================================
+                 report
+====================================================*/
+
+.img-wrapper img {
+    transition: transform .5s ease;
+    width: 300px !important;
+    height: 300px!important;
+    display: block;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+
+/*==================================================
+                تسجيل الدخول
+====================================================*/
+
+.logpop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+}
+
+.loginBox {
+    /*display: none;*/
+    width: 320px;
+    height: 460px;
+    background: #fff;
+    opacity: 1;
+    color: black;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+    border: white 5px solid;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+#login h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginBox p {
+    padding: 0;
+    font-weight: bold;
+    margin: 0 0 0 70%;
+}
+
+#logEr {
+    color: red;
+    font-size: smaller;
+    width: max-content;
+    margin-top: 0;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px #000 solid;
+    border-radius: 15px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+}
+
+.loginBox input[type="submit"] {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #008bff;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover {
+    background: #01fbff;
+    color: #000000;
+}
+
+.loginBox a {
+    text-align: center;
+    /*    text-decoration: none;*/
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.loginBox a:hover {
+    color: black;
+}
+
+#close-pop {
+    color: black;
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.loginBox .btn {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+
+/*====================================================
+               doctors
+=====================================================*/
+
+.doctors_member {
+    margin: 0 15px;
+}
+
+.doctors_member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.doctors_member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+p.doctors_member-about {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    color: #34c6d3;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.img-resize {
+    width: 200px;
+    height: 350px;
+}
+
+.img-resize-articl {
+    width: 400px;
+    height: 350px;
+}
+
+
+/*====================================================
+               stats
+=====================================================*/
+
+#stat-cover {
+    background-image: url("../imgs/cover.jpg");
+}
+
+#stats .content-box {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.stats-item {
+    padding: 100px 0;
+}
+
+.stats-item i {
+    color: #34c6d3;
+}
+
+.stats-item h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item p {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+
+/*====================================================
+               social
+=====================================================*/
+
+.social-list {
+    padding-right: 0;
+    text-align: right;
+}
+
+.social-list ul {
+    padding-right: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    grid-template-areas: none;
+    font-size: 20px;
+}
+
+.icon-white i {
+    color: #FFF;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+
+/*====================================================
+               contact
+=====================================================*/
+
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, .1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: right;
+}
+
+#contact-left p {
+    color: white;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
+/* #contact-info {
+    /*background-image: url("../imgs/map.jpg");*/
+
+
+/*    background-repeat: no-repeat;*/
+
+
+/*    background-size: contain;*/
+
+
+/* */
+
+*/ #contact-info address {
+    color: white;
+    text-align: right;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#contact-right {
+    padding-left: 10px;
+    /*float: left;*/
+}
+
+#contact-right textarea {
+    width: 100%;
+}
+
+
+/*====================================================
+               footer-bottom
+=====================================================*/
+
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyleft {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-copyleft ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-copyleft ul li {
+    display: inline-block;
+}
+
+#footer-copyleft a {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-copyleft a:hover {
+    color: #34c6d3;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-copyrights {
+    text-align: right;
+}
+
+
+/*=================================================
+                        header
+=====================================================*/
+
+#logo {
+    color: #fff;
+    font-size: 26px;
+}
+
+.navbar {
+    padding: 5px 0;
+    /*=====new==========*/
+    transition: all .5s ease-in-out;
+}
+
+.care-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+
+.care-nav-wrapper {
+    padding: 0 40px;
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.navbar-nav>li {
+    float: right !important;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 3px 2px 2px #000;
+    float: right;
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+    color: #34c6d3;
+    background: none;
+}
+
+.navbar-toggle {
+    border-color: rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-collapse {
+    max-height: none !important;
+}
+
+.care-top-nav ul.navbar-nav>li.active>a {
+    color: #34c6d3;
+}
